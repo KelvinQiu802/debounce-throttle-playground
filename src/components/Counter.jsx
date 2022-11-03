@@ -10,7 +10,7 @@ function Counter() {
   }, 500);
 
   return (
-    <div className='counter-group'>
+    <div className='input-group'>
       <div className='counter'>
         <button onClick={() => setNormalCount((prev) => prev + 1)}>
           Normal Click
