@@ -6,7 +6,7 @@ const throttle = (cb, delay) => {
       return;
     }
     last = now;
-    return cb(...args);
+    return fn(...args);
   };
 };
 

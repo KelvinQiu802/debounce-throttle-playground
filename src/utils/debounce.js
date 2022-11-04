@@ -1,4 +1,4 @@
-const debounce = (cb, delay) => {
+const debounce = (fn, delay) => {
   let timeoutId;
 
   return function (...args) {
@@ -7,7 +7,7 @@ const debounce = (cb, delay) => {
     }
 
     timeoutId = setTimeout(() => {
-      cb(...args);
+      fn(...args);
     }, delay);
   };
 };
